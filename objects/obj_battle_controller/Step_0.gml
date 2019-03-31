@@ -95,9 +95,16 @@ if (inCombat)
 			show_debug_message("BeforeBattleX:" + string(beforeBattleX));
 			show_debug_message("BeforeBattleY:" + string(beforeBattleY));
 			inCombat = false;
-			scr_fadeout(last_room, c_white, 0.05, beforeBattleX, beforeBattleY);
 			show_debug_message("This is running");
 			ranAway = false;
+			if (p_exp >= p_maxExp)
+			{
+				scr_levelUp();
+			}
+			else
+			{
+				scr_fadeout(last_room, c_white, 0.05, beforeBattleX, beforeBattleY);
+			}
 		}
 	}
 	if (instance_exists(enemyID) && enemyID.e_health <= 0)
@@ -120,8 +127,4 @@ if (inCombat)
 		playerTurn = true;
 	}
 	
-}
-if (p_exp >= p_maxExp)
-{
-	scr_levelUp();
 }

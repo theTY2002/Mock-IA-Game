@@ -15,6 +15,7 @@ if (keyboard_check_pressed((vk_escape)))
 	game_end();
 }
 
+/*
 if (keyboard_check_pressed(ord("P")))
 {
 	if (!instance_exists(obj_fade) && room != rm_battle && room != rm_pause)

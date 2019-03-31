@@ -11,6 +11,7 @@ if (room != target)
 	{
 		if (instance_exists(obj_player))
 		{
+			obj_player.visible = true;
 			obj_player.x = xx;
 			obj_player.y = yy;
 		}

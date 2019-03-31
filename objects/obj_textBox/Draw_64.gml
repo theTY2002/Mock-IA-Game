@@ -4,14 +4,14 @@
 textBoxX = camera.x - camera_get_view_width(camera) / 8;
 textBoxY = camera.y + boxHeight;//+ room_height / 2;
 
-//textBoxX = clamp(textBoxX, camera_get_view_width(camera) / 4, room_width - boxWidth);
-textBoxY = clamp(textBoxY, camera_get_view_height(camera) / 4, room_height);
+textBoxX = clamp(textBoxX, room_width / 4, room_width * 2 / 4);
+textBoxY = clamp(textBoxY, room_height / 4, room_height / 4 * 3);
 draw_sprite(spr_textBox, 0, textBoxX, textBoxY);
 //show_debug_message("textBoxX: " + string(textBoxX));
 //show_debug_message("textBoxY: " + string(textBoxY));
 
 
-//Draw text
+//Iterate through each character
 draw_set_font(fnt_text);
 
 if (charCount < string_length(text[page]))
@@ -22,8 +22,10 @@ textPart = string_copy(text[page], 1, charCount);
 
 //Draw Name
 draw_set_halign(fa_center);
-draw_text(textBoxX + (boxWidth / 2), textBoxY + yBuffer, name);
+draw_set_color(c_yellow);
+draw_text(textBoxX + (boxWidth / 2), textBoxY + yBuffer / 2, name);
 draw_set_halign(fa_left);
+draw_set_color(c_white);
 
 //Draw Text
 draw_text_ext(textBoxX + xBuffer, textBoxY + stringHeight + yBuffer * 2, textPart, yBuffer, boxWidth);
