@@ -9,6 +9,8 @@
 /// @arg accuracy
 /// @arg dodge
 /// @arg luck
+
+//Set enemy stats
 e_health = argument0;
 e_maxHealth = argument1;
 e_attack = argument2;

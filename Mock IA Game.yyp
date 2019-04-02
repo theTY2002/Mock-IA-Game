@@ -3530,7 +3530,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/scr_draw_character_sprite_combat\/scr_draw_character_sprite_combat.yy",
+                "resourcePath": "scripts\/scr_draw_character_sprite_combatOLD\/scr_draw_character_sprite_combatOLD.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3663,7 +3663,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/scr_draw_character_attack_combat\/scr_draw_character_attack_combat.yy",
+                "resourcePath": "scripts\/scr_draw_character_attack_combatOLD\/scr_draw_character_attack_combatOLD.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3846,8 +3846,6 @@
         "f7a95676-2255-4bc1-9d6b-63470c993165",
         "d5191e03-d2c2-4f56-a66f-2467ea95b8e0",
         "b101b77c-17a9-4d48-9e10-536771fc2fd6",
-        "e873c97f-f0c8-4a34-a881-350cc02b6333",
-        "f1e5ee6b-6b55-4b2f-be05-b88441330f9f",
         "e64cda0f-7b26-4db3-a9be-138ec1a51975",
         "0a55d345-c012-4a44-b2f3-3f16099be368",
         "9e3eeaeb-fd46-4778-af5f-8c66e646d333",
@@ -3863,7 +3861,9 @@
         "2bd6121a-6de8-44f7-a580-94a967385959",
         "0cf0146a-7072-4651-9cc0-585702774a41",
         "6f14f0f3-b39e-4cc3-851e-e8f9e80404f6",
-        "28e5ba1d-85ab-4cec-8b3e-32956ad566e1"
+        "28e5ba1d-85ab-4cec-8b3e-32956ad566e1",
+        "f1e5ee6b-6b55-4b2f-be05-b88441330f9f",
+        "e873c97f-f0c8-4a34-a881-350cc02b6333"
     ],
     "tutorial": ""
 }

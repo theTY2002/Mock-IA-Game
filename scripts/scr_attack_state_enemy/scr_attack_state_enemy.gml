@@ -1,8 +1,12 @@
+//Enemy attack state
+
+//If player is not very close, switch to alert state
 if (!collision_circle(x, y, 24, obj_player, false, false))
 {
 	state = enemyStates.alert;
 }
 
+//Create hitbox
 if (xFrame == 7)
 {
 	var createX = 0;

@@ -1,3 +1,5 @@
+//Set player stats as global variables
+
 globalvar p_level;
 p_level = 1;
 globalvar p_health;

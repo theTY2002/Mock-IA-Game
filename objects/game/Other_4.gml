@@ -1,6 +1,4 @@
-// @description Insert description here
-// You can write your code in this editor
-
+//Set correct sprite for player
 with (obj_player)
 {
 	switch (facing)
@@ -20,6 +18,7 @@ with (obj_player)
 	}
 }
 
+//Check for battle
 if (room == rm_battle)
 {
 	obj_battle_controller.alarm[0] = 1;

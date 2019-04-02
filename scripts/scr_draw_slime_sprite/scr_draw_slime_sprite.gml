@@ -1,11 +1,14 @@
 ///@desc draw_slime_sprite (color)
 ///@arg color
+
+// Initalise variables
 var animLength = 10;
 var frameSize = 64;
 var animSpeed = 10;
 var framesPerSecond = 60;
 var color = argument0;
 
+// Draw overworld sprites if not in combat
 if (!inCombat)
 {
 	switch (color)
@@ -132,8 +135,10 @@ if (!inCombat)
 			break;
 	}
 }
+//Draw combat sprites in combat
 else
 {
+	//Draw attack when attacking
 	if (enemyAttacking)
 	{
 		switch (color)
@@ -175,9 +180,10 @@ else
 drawX = x - x_offset;
 drawY = y - y_offset;
 
-//Draw Character Shadow
+//Draw Enemy Shadow
 draw_sprite(spr_slime_shadow, 0, x, y + 6);
 
+//Draw Enemy
 draw_sprite_part(spr_enemy_base, 0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, drawX, drawY);
 
 if (xFrame + animSpeed / framesPerSecond < animLength)

@@ -64,6 +64,7 @@ if (inCombat)
 					playerMAttacking = true;
 					obj_player.xFrame = 0;
 					alarm[1] = 35;
+					selectingEnemy = false;
 					with (obj_player)
 					{
 						scr_cast_fire();
@@ -72,7 +73,6 @@ if (inCombat)
 					{
 						//show_debug_message("Enemy Health: " + string(e_health));
 					}
-					selectingEnemy = false;
 					playerTurn = false;
 				}
 			}

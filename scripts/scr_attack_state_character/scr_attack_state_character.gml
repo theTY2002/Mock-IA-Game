@@ -1,3 +1,6 @@
+//Player attack state
+
+//Create the hitbox of the attack
 if (xFrame == 4)
 {
 	var createX = 0;

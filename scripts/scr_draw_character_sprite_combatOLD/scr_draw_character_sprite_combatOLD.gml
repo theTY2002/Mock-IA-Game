@@ -1,3 +1,4 @@
+//Draw character sprite in combat
 var animLength = 9;
 var frameSize = 64;
 var animSpeed = 12;

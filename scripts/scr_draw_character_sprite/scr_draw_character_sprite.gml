@@ -1,8 +1,12 @@
+// Draws the character sprite in the overworld
+
+//Initialise variables
 var animLength = 9;
 var frameSize = 64;
 var animSpeed = 12;
 var framesPerSecond = 60;
 
+//If in overworld draw overworld sprites
 if (!inCombat)
 {
 	switch (state)
@@ -87,6 +91,7 @@ if (!inCombat)
 		}
 	}
 }
+//If in battle draw battle sprites
 else
 {
 	yFrame = 7;
@@ -126,6 +131,7 @@ else
 		draw_sprite_part(spr_attack, 0, floor(xFrame)*frameSize, yFrame*frameSize, frameSize, frameSize, drawX + 20, drawY);
 	}
 }
+
 //Draw Character Shadow
 draw_sprite(spr_character_shadow, 0, x, y + 26);
 

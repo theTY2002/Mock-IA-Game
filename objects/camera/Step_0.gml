@@ -1,6 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-
+//Move camera using C when not in combat
 if (!inCombat)
 {
 	moveCam = keyboard_check(ord("C"));
@@ -14,6 +12,7 @@ if (!inCombat)
 		x += (inputRight - inputLeft) * 6;
 		y += (inputDown - inputUp) * 6;
 	}
+	//Camera follows the player
 	else
 	{
 		//Smooth Camera

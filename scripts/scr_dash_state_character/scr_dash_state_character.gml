@@ -1,3 +1,6 @@
+//Player dash state
+
+//Set speed to 4 times the walking speed
 len = spd * 4;
 
 //Movement
@@ -12,7 +15,6 @@ y += moveY;
 
 //Create dash effect
 var dash = instance_create_depth(drawX, drawY, depth, obj_dash_effect);
-//dash.sprite_index = sprite_index;
 
 if (sign(moveX) == -1)
 {

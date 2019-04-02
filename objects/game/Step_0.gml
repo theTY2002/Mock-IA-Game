@@ -1,15 +1,16 @@
-/// @description Insert description here
-// You can write your code in this editor
+//Toggle debug mode using 0
 if (keyboard_check_pressed(ord("0")))
 {
 	debug = !debug;
 }
 
+//Restart game using R
 if (keyboard_check_pressed(ord("R")))
 {
 	game_restart();
 }
 
+//Exit game using esc
 if (keyboard_check_pressed((vk_escape)))
 {
 	game_end();

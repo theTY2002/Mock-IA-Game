@@ -1,7 +1,9 @@
+//Increment stats of the player on level up
+
+//Transition to level up screen
 scr_fadeout(rm_levelUp, c_white, 0.05, obj_player.x, obj_player.y);
 
-//instance_create_depth(x, y, depth, obj_levelUp);
-
+//Increase all stats by growth rate and restore HP and MP to max
 p_exp = p_exp - p_maxExp;
 p_level ++;
 p_maxExp *= 1.1;
