@@ -609,6 +609,25 @@
             }
         },
         {
+            "Key": "2a02fd66-25c0-449f-a7fe-11f315f1029d",
+            "Value": {
+                "id": "dbe72288-481e-4de1-a475-329de40b7950",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "fonts\/fnt_levelUp\/fnt_levelUp.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "2a4a6d38-7489-46ac-98ea-d04b0b38c302",
             "Value": {
                 "id": "f82e27c6-052b-4e6e-bd48-39ca1c4e5112",
@@ -3832,7 +3851,6 @@
         "e64cda0f-7b26-4db3-a9be-138ec1a51975",
         "0a55d345-c012-4a44-b2f3-3f16099be368",
         "9e3eeaeb-fd46-4778-af5f-8c66e646d333",
-        "28e5ba1d-85ab-4cec-8b3e-32956ad566e1",
         "b4ea0bac-a230-4a8f-b3ec-a3f873f0a30b",
         "7f91d630-30e4-47b9-a765-96322ab3e8b4",
         "7e09873b-08b0-4073-ad0b-17f3c635ae68",
@@ -3844,7 +3862,8 @@
         "c52893f7-8b18-42c0-866f-a7789f2dc168",
         "2bd6121a-6de8-44f7-a580-94a967385959",
         "0cf0146a-7072-4651-9cc0-585702774a41",
-        "6f14f0f3-b39e-4cc3-851e-e8f9e80404f6"
+        "6f14f0f3-b39e-4cc3-851e-e8f9e80404f6",
+        "28e5ba1d-85ab-4cec-8b3e-32956ad566e1"
     ],
     "tutorial": ""
 }
