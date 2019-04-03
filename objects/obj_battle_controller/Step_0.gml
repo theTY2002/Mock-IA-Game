@@ -28,7 +28,7 @@ if (inCombat)
 		}
 	
 		//Melee attack
-		if (battleMenuSelection == 0 && keyboard_check_pressed(vk_enter))
+		if (battleMenuSelection == 0 && keyboard_check_pressed(ord("X")))
 		{
 			if (!selectingEnemy)
 			{
@@ -50,7 +50,7 @@ if (inCombat)
 			}
 		}
 		//Magic attack
-		else if (battleMenuSelection == 1 && keyboard_check_pressed(vk_enter))
+		else if (battleMenuSelection == 1 && keyboard_check_pressed(ord("X")))
 		{
 			if (p_magic >= 2)
 			{
@@ -77,7 +77,7 @@ if (inCombat)
 			}
 		}
 		//Run away
-		else if (battleMenuSelection == 2 && keyboard_check_pressed(vk_enter))
+		else if (battleMenuSelection == 2 && keyboard_check_pressed(ord("X")))
 		{
 			ranAway = true;
 		}

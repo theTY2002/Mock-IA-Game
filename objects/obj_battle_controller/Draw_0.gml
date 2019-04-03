@@ -29,8 +29,11 @@ if (inCombat)
 	//Draw HP bar & MP bar of player
 	with (obj_player)
 	{
+		draw_sprite(spr_health_icon, 0, x - 36, y + 42);
+		draw_sprite(spr_magic_icon, 0, x - 36, y + 62);
+		
 		draw_healthbar(x - 20, y + 45, x + 20, y + 55, (p_health / p_maxHealth) * 100, c_black, c_red, c_lime, 0, true, true);
-		draw_healthbar(x - 20, y + 55, x + 20, y + 65, (p_magic / p_maxMagic) * 100, c_black, c_red, c_blue, 0, true, true);
+		draw_healthbar(x - 20, y + 65, x + 20, y + 75, (p_magic / p_maxMagic) * 100, c_black, c_red, c_blue, 0, true, true);
 	}
 	//Draw HP bar of enemy
 	with (enemyID)
