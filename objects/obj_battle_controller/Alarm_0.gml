@@ -1,3 +1,2 @@
-/// @description Create Enemy
-// You can write your code in this editor
+//Create enemy object
 instance_create_depth(575, 250, depth, enemyID);

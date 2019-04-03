@@ -1,5 +1,5 @@
 /// @description Draw the GUI
-// You can write your code in this editor
+/*
 if (room == rm_pause)
 {
 	//Draw Stats Box

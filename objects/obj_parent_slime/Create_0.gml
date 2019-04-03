@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+//Initalise
 event_inherited();
 
 spd = 0.5;

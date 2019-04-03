@@ -1,4 +1,4 @@
-//Set correct sprite for player
+//Set correct sprite for player object
 with (obj_player)
 {
 	switch (facing)

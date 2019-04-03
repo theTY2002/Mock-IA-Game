@@ -1,7 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
 event_inherited();
 
+//Initialise
 scr_init_character();
 
 spr_base = -1;

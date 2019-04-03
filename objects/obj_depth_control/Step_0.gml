@@ -1,3 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
+//Set depth according to position in room
 depth = -y;

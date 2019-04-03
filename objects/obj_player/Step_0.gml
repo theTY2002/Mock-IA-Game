@@ -1,7 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
 event_inherited();
 
+//If in overworld
 if (!inCombat && !inTextBox)
 {
 	if (!instance_exists(obj_fade))

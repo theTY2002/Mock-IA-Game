@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+//Randomly choose between idle and moving
 moveX = 0;
 moveY = 0;
 
@@ -24,6 +23,5 @@ if (idle == false)
 	}
 	
 }
-
 
 alarm[1] = random_range(2.5, 4) * room_speed;

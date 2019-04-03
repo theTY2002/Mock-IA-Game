@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 scr_init_character();
 
 spr_base = spr_male_1;

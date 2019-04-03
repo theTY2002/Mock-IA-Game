@@ -1,13 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
 //Draw textbox
 textBoxX = 64;
 textBoxY = 196;
 
-//Iterate through each character
 draw_set_font(fnt_levelUp);
 draw_set_color(c_black);
 
+//Iterate through each character
 if (charCount < string_length(text))
 {
 	charCount += 0.5;

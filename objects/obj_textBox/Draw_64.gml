@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 //Draw textbox
 textBoxX = camera.x - camera_get_view_width(camera) / 8;
 textBoxY = camera.y + boxHeight;//+ room_height / 2;
@@ -9,7 +7,6 @@ textBoxY = clamp(textBoxY, room_height / 4, room_height / 4 * 3);
 draw_sprite(spr_textBox, 0, textBoxX, textBoxY);
 //show_debug_message("textBoxX: " + string(textBoxX));
 //show_debug_message("textBoxY: " + string(textBoxY));
-
 
 //Iterate through each character
 draw_set_font(fnt_text);

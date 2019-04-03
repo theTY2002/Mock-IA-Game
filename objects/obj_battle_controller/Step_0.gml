@@ -1,11 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-//Menu Selection
 if (inCombat)
 {
+	//Player Turn
 	if (playerTurn)
 	{
+		//Menu Selection
 		if (keyboard_check_pressed(vk_left))
 		{
 			if (battleMenuSelection - 1 < 0)
@@ -29,7 +27,7 @@ if (inCombat)
 			}
 		}
 	
-		//Selecting Enemy
+		//Melee attack
 		if (battleMenuSelection == 0 && keyboard_check_pressed(vk_enter))
 		{
 			if (!selectingEnemy)
@@ -51,6 +49,7 @@ if (inCombat)
 				playerTurn = false;
 			}
 		}
+		//Magic attack
 		else if (battleMenuSelection == 1 && keyboard_check_pressed(vk_enter))
 		{
 			if (p_magic >= 2)
@@ -77,46 +76,54 @@ if (inCombat)
 				}
 			}
 		}
+		//Run away
 		else if (battleMenuSelection == 2 && keyboard_check_pressed(vk_enter))
 		{
 			ranAway = true;
 		}
-		
+		//Cancel selection
 		if (keyboard_check_pressed(ord("B")) && selectingEnemy)
 		{
 			selectingEnemy = false;
 		}
 	}
+	//If enemy is dead
 	if (!instance_exists(enemyID))
 	{
 		with (obj_player)
 		{
+			/*
 			show_debug_message("Last Room:" + string(last_room));
 			show_debug_message("BeforeBattleX:" + string(beforeBattleX));
 			show_debug_message("BeforeBattleY:" + string(beforeBattleY));
+			*/
 			inCombat = false;
 			show_debug_message("This is running");
 			ranAway = false;
+			//Level up
 			if (p_exp >= p_maxExp)
 			{
 				scr_levelUp();
 			}
+			//Fade back to the last room
 			else
 			{
 				scr_fadeout(last_room, c_white, 0.05, beforeBattleX, beforeBattleY);
 			}
 		}
 	}
+	//Destroy enemy when enemy health is below 0
 	if (instance_exists(enemyID) && enemyID.e_health <= 0)
 	{
 		p_exp += enemyID.e_exp;
 		instance_destroy(enemyID);
 	}
+	//Destroy enemy when running away
 	if (ranAway)
 	{
 		instance_destroy(enemyID);
 	}
-	
+	//Enemy turn
 	if (!playerTurn && instance_exists(enemyID))
 	{
 		enemyAttacking = true;

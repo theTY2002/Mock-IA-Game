@@ -1,7 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
 event_inherited();
 
+//Excecute states when not in combat
 if (!inCombat)
 {
 	switch (state)
@@ -18,13 +17,5 @@ if (!inCombat)
 		case enemyStates.attack:
 			script_execute(state);
 			break;
-	}
-}
-
-if (inCombat)
-{
-	if (!playerTurn)
-	{
-		
 	}
 }

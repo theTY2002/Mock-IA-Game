@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 //Draw Battle Menu Options
 if (inCombat)
 {
@@ -29,18 +26,20 @@ if (inCombat)
 			draw_sprite(battleMenu[i], 0, 200 * i + 150, 380);
 		}
 	}
-	//Draw Healthbars
+	//Draw HP bar & MP bar of player
 	with (obj_player)
 	{
 		draw_healthbar(x - 20, y + 45, x + 20, y + 55, (p_health / p_maxHealth) * 100, c_black, c_red, c_lime, 0, true, true);
 		draw_healthbar(x - 20, y + 55, x + 20, y + 65, (p_magic / p_maxMagic) * 100, c_black, c_red, c_blue, 0, true, true);
 	}
+	//Draw HP bar of enemy
 	with (enemyID)
 	{
 		draw_healthbar(x - 20, y + 45, x + 20, y + 55, (e_health / e_maxHealth) * 100, c_black, c_red, c_lime, 0, true, true);
 	}
 	//draw_text(enemyID.x - 30, enemyID.y + 35, enemyID.name);
 	
+	//Draw enemy selection
 	if (selectingEnemy && instance_exists(enemyID))
 	{
 		draw_set_color(c_white);

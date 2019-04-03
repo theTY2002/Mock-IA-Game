@@ -1,6 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-// @arg text
+//Initialise
 text = "";
 xBuffer = 25;
 yBuffer = 25;

@@ -1,4 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+//Set state back to move state
 state = playerStates.move;
 attacked = false;

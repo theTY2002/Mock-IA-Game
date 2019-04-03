@@ -1,8 +1,7 @@
-/// @description Draw Fadeout
-// You can write your code in this editor
+//Draw fade over whole screen
 draw_set_color(fade_color);
 draw_set_alpha(image_alpha);
-	
+
 if (room != target)
 {
 	image_alpha += fade_speed;

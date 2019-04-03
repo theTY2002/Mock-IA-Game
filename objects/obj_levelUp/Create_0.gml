@@ -1,6 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-// @arg text
+//Initialise
 text = "Lv.       --> " + string(p_level) + "\n" +
 	   "ATK       --> " + string(p_attack) + "\n" +
 	   "Magic ATK --> " + string(p_mAttack) + "\n" +

@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+//Initialise
 enum enemyStates
 {
 	idle = scr_idle_state_enemy,
@@ -14,7 +13,5 @@ counter = 0;
 
 moveX = 0;
 moveY = 0;
-
-hp = 3;
 
 facing  = 180;

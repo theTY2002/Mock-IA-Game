@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+//Fade to invisible
 if (image_alpha > 0)
 {
 	image_alpha -= 0.1;
