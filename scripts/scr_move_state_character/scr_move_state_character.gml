@@ -60,4 +60,3 @@ scr_collision();
 //Apply movement
 x += moveX;
 y += moveY;
-
