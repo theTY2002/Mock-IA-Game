@@ -1,5 +1,10 @@
 event_inherited();
 
+if(p_health <= 0)
+{
+	game_restart();
+}
+
 //If in overworld
 if (!inCombat && !inTextBox)
 {
