@@ -1,7 +1,7 @@
 //Press space to go to next page
 event_inherited();
 
-if (keyboard_check_pressed(vk_space))
+if (keyboard_check_pressed(ord("Z")))
 {
 	if (page + 1 < array_length_1d(text))
 	{

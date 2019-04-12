@@ -1,7 +1,7 @@
 //Horizontal Collision
 if (moveX != 0)
 {
-	if (place_meeting(x + moveX, y, obj_parent_NPC))
+	if (place_meeting(x + moveX, y, obj_parent_NPC) && keyboard_check_pressed(ord("Z")))
 	{
 		with (obj_parent_NPC)
 		{
@@ -19,7 +19,7 @@ if (moveX != 0)
 //Vertical Collision
 if (moveY != 0)
 {
-	if (place_meeting(x, y + moveY, obj_parent_NPC))
+	if (place_meeting(x, y + moveY, obj_parent_NPC) && keyboard_check_pressed(ord("Z")))
 	{
 		with (obj_parent_NPC)
 		{
